@@ -15,7 +15,6 @@ env:
   AWS_REGION: us-east-1
   EB_ENVIRONMENT_NAME: Gospelbackend-env
   EB_APPLICATION_NAME: gospel-backend
-  EB_DEPLOYMENT_PACKAGE: elasticbeanstalk/docker-compose.yml
 
 jobs:
   deploy:
@@ -48,7 +47,6 @@ jobs:
           region: ${{ env.AWS_REGION }}
           environment_name: ${{ env.EB_ENVIRONMENT_NAME }}
           application_name: ${{ env.EB_APPLICATION_NAME }}
-          deployment_package: ${{ env.EB_DEPLOYMENT_PACKAGE }}
           version_label: ${{ steps.build-number.outputs.BUILD_NUMBER }}
           version_description: Version ${{steps.build-number.outputs.BUILD_NUMBER}} deployed via github actions ${{ github.sha }}
           wait_for_deployment: 60
