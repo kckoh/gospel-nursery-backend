@@ -2,11 +2,22 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '2.7.8'
     id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+    id 'com.google.cloud.tools.jib' version '3.1.4'
 }
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
+jib {
+    from {
+        image = 'eclipse-temurin:17'
+    }
+
+    to {
+        image = "1876066700/gospel-nursery-backend"
+        tags = ["latest"]
+    }
+}
 
 configurations {
     compileOnly {

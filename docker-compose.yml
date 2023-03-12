@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  backend:
+    image: "1876066700/gospel-nursery-backend"
+    ports:
+      - "80:8080"
+    restart: always
+#    volumes:
+#      - "/backend/build/libs/backend-0.0.1-SNAPSHOT.jar:/backend/build/libs/backend-0.0.1-SNAPSHOT.jar"
