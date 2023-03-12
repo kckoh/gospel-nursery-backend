@@ -31,7 +31,7 @@ public class ImageController {
     @CrossOrigin(origins = url)
     @GetMapping
     public String hello(){
-        return "CI/CD successful!!!";
+        return "new CI/CD successful!!!";
     }
 
     @GetMapping("/images")
