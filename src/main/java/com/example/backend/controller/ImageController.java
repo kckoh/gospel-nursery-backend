@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Set;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://gospelnursery.net")
 @RequestMapping(value = "/api")
 @RequiredArgsConstructor
 @RestController
