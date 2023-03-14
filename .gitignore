@@ -6,11 +6,10 @@
 *.log
 
 # gradle files
-.gradle/
-.gradle
+.gradle/**
 
 # build files
-.build/
+build/
 
 
 # BlueJ files
